@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import './css/greeting.css';
+import { fetchgreeting } from './redux/greetings/greeting';
 
 const Greeting = () => {
     const greeting = useSelector((state) => state.greeting);
     const dispatch = useDispatch();
     const handleClick = () => {
-        dispatch(getgreeting())
+        dispatch(fetchgreeting())
     }
     return (
     <div className="greeting">

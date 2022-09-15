@@ -9,11 +9,13 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import store from './components/redux/configureStore';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+
+root.render(
   <Router>
     <Provider store={store}>
-      <App/>
+      <App />
     </Provider>
-  </Router>,
-  document.getElementById('root'),
+  </Router>
 );

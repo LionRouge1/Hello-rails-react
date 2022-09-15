@@ -5,16 +5,16 @@ export const getgreeting = (message) => ({
   message,
 });
 
-initialState = {
+const initialState = {
     greeting: '',
 };
 
-const Reducer = (state=initialState, action) => {
+const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case GETRANDOMGREETING:
       return {
         ...state,
-        greeting: action.message
+        greeting: action.message,
       };
     default:
       return state;
