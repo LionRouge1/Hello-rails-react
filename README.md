@@ -14,9 +14,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Follow these steps to run the app:
   - run `gem install`
-  - run `yarn` or `npm install`
   - run `./bin/dev`
-
 ## Authors
 
 👤 **Matchoudi**
