@@ -14,6 +14,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Follow these steps to run the app:
   - run `gem install`
+  - run `yarn`
+  - run `yarn build --watch`
+    - install the missing packages in case the command throw errors (`yarn add packge-name`)
+    - Webpack have to compiled successfully before you proceed
   - run `./bin/dev`
 ## Authors
 
