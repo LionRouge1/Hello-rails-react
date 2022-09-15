@@ -1,0 +1,4 @@
+.greeting {
+  display: grid;
+  place-items: center;
+}
