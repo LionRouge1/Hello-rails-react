@@ -4,12 +4,18 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import App from './components/App';
+import store from './components/redux/configureStore';
 
-function App() {
-  return (<h1>Hello World!</h1>);
-}
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-ReactDOM.render(
-  <App/>,
-  document.getElementById('root'),
+
+root.render(
+  <Router>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>
 );
